@@ -1,0 +1,16 @@
+
+var VERSION='0.1'
+var FULL_VERSION='0.1'
+var AUTHORS='Paul Knopf'
+
+use import='Common'
+
+#default
+	node-install
+	bower-install
+	gulp-install
+
+	dnvm-install
+	dnvm-use version='1.0.0-rc1-final'
+	dnu-build projectFile='src\AwesomeWeb'
+	dnu dnuCommand='publish src\AwesomeWeb'
